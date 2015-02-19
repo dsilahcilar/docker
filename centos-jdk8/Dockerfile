@@ -15,6 +15,6 @@ RUN alternatives --install /usr/bin/java java /opt/jdk1.8.0_31/bin/java 2 \
     && alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_31/bin/javac 2 \
     && alternatives --set jar /opt/jdk1.8.0_31/bin/jar \
     && alternatives --set javac /opt/jdk1.8.0_31/bin/javac
-ENV JAVA_HOME /opt/jdk1.8.0_31 \
-    JRE_HOME /opt/jdk1.8.0_31/jre \
-    PATH $PATH:/opt/jdk1.8.0_31/bin:/opt/jdk1.8.0_31/jre/bin
+ENV JAVA_HOME /opt/jdk1.8.0_31 
+ENV JRE_HOME /opt/jdk1.8.0_31/jre 
+ENV PATH $PATH:/opt/jdk1.8.0_31/bin:/opt/jdk1.8.0_31/jre/bin
